@@ -5,3 +5,5 @@ function start-sublimetext
 }
 
 set-alias subl start-sublimetext
+
+set-alias ll ls
