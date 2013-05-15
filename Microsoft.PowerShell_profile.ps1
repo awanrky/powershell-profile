@@ -1,9 +1,6 @@
+$ProfileDir = (split-path $MyInvocation.MyCommand.Path -Parent)
 
-function start-sublimetext
-{
-	start-process "C:\Program Files\Sublime Text 3\sublime_text.exe"
-}
-
-set-alias subl start-sublimetext
-
-set-alias ll ls
+Push-Location $ProfileDir
+	. ./aliases.ps1
+	. ./local-network-script.ps1
+Pop-Location
