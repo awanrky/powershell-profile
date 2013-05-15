@@ -11,5 +11,7 @@ To create a symlink so that the powershell $profile directory points to the loca
 
 Assuming the command above was run from the command line (not powershell) and the current directory is the parent directory of the local copy of this repository.
 
+Note that you can't commit from the symlink directory, you must be in the actual local copy.  However, powershell treats it as the profile directory just fine
+
 ---
 
