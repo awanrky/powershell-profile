@@ -11,6 +11,11 @@ $IpAddresses = Get-NetIPAddress |
 if ($Networks -contains '13') # home sweet home
 {
 	# echo '13'
+	function set-location-projects 
+	{
+		Set-Location d:\Projects
+		ls
+	}
 }
 
 if ($Networks -contains '4') # dev
@@ -32,4 +37,10 @@ if ($Networks -contains '11' -or $Networks -contains '4')
 		enter-pssession -computername umbriel -credential umbriel\mark.ott
 	}
 	set-alias umbriel enter-pssession-umbriel
+
+	function set-location-projects 
+	{
+		Set-Location c:\Projects
+		ls
+	}
 }
