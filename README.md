@@ -3,6 +3,8 @@ powershell-profile
 
 My powershell profile, placed in github for easy access
 
+Many thanks to David Mohundro (https://github.com/drmohundro) for his inspiring talk at NWADNUG, and for providing his powershell profile on github--which has provided many good examples that helped me learn, and lots of working code that I have used as-is.
+
 ---
 
 To create a symlink so that the powershell $profile directory points to the local copy of this repository...
