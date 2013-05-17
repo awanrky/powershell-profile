@@ -1,7 +1,7 @@
 $ProfileDir = (split-path $MyInvocation.MyCommand.Path -Parent)
 
 Push-Location $ProfileDir
-	. ./miscellaneous-functions.ps1
+	. ./lib/load-library.ps1
 	. ./prompt.ps1
 	. ./eye-candy.ps1
 	. ./aliases.ps1
